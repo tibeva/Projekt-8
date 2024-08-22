@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #c6e1e0;
+}
+
+.hero {
+  background-color: #ec5e2a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box.large {
+  grid-column: span 2;
+}
+
+.cta {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.about,
+.skills,
+.portfolio,
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ec5e2a;
+  text-decoration: none;
+}
