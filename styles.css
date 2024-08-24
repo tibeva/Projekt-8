@@ -81,7 +81,10 @@ body {
 }
 
 .skills .bento-grid {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* Ensure all five boxes are in one line */
   gap: 10px;
 }
 
@@ -137,6 +140,9 @@ footer a {
   }
 
   .skills .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Stack boxes two per line on small screens */
   }
 }
