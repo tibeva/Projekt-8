@@ -168,3 +168,13 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.portfolio-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
