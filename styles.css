@@ -81,11 +81,8 @@ body {
 }
 
 .skills .bento-grid {
-  grid-template-columns: repeat(
-    5,
-    1fr
-  ); /* Ensure all five boxes are in one line */
-  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
 .skills .box:not(.large) {
@@ -130,6 +127,34 @@ footer a {
   text-decoration: none;
 }
 
+.email-button,
+.linkedin-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.email-button {
+  background-color: #ec5e2a;
+  color: white;
+}
+
+.email-button:hover {
+  background-color: #b8441f;
+}
+
+.linkedin-button {
+  background-color: #0077b5;
+  color: white;
+}
+
+.linkedin-button:hover {
+  background-color: #005582;
+}
+
 @media (max-width: 768px) {
   .bento-grid {
     grid-template-columns: 1fr;
@@ -140,9 +165,6 @@ footer a {
   }
 
   .skills .bento-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Stack boxes two per line on small screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
